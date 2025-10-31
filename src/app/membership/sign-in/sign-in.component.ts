@@ -22,7 +22,7 @@ export class SignInComponent {
  
   constructor(private router: Router) {}
  onLogin() {
-    // Dummy user for validation
+    
     const validUser = {
       email: 'admin',
       password: '12345'
@@ -35,5 +35,8 @@ export class SignInComponent {
       this.errorMessage = 'Invalid email or password';
     }
   }
- 
+ navigateToRegister()
+ {
+  alert('navigateToRegister!');
+ }
 }
